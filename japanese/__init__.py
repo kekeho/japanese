@@ -48,3 +48,4 @@ katakana_to_hira_dict = {**{v:k for k, v in seion_dict.items()},
                         **{v:k for k, v in komoji_hiragana_dict.items()},
                         **komoji_katakana_dict}
 komoji_dict = {**komoji_hiragana_dict, **komoji_katakana_dict}
+omoji_to_komoji_dict = {v:k for k, v in komoji_to_omoji_dict.items()}
