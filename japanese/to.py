@@ -2,12 +2,12 @@ import japanese
 pass_chars = ['。', '、', ' ', '\n', '\t', '\b', '\r', '\f']
 
 
-def upper(string: str or list) -> str or list:
+def upper(string: str) -> str:
     """Convert to Ōmoji every char.
     Args:
-        string(str or list[str]): Check string (or list)
+        string(str): Check string
     Returns:
-        Converted string(str or list)
+        Converted string(str)
     """
     if(isinstance(string, str)):  # string is str
         for char in string:
@@ -16,25 +16,16 @@ def upper(string: str or list) -> str or list:
                 string = string.replace(
                     char, japanese.komoji_to_omoji_dict[char])
         return string
-
-    elif(isinstance(string, list)):  # string is list
-        string_list = string
-        return_list = []
-        for string in string_list:
-            for char in string:
-                if(char in japanese.komoji_to_omoji_dict):
-                    string = string.replace(
-                        char, japanese.komoji_to_omoji_dict[char])
-            return_list.append(string)
-        return return_list
+    else:
+        raise ValueError('arg must be str')
 
 
-def lower(string: str or list) -> str or list:
+def lower(string: str) -> str:
     """Convert to Komoji every char.
     Args:
-        string(str or list[str]): Check string (or list)
+        string(str): Check string
     Returns:
-        Converted string(str or list)
+        Converted string(str)
     """
     if(isinstance(string, str)):  # string is str
         for char in string:
@@ -43,14 +34,5 @@ def lower(string: str or list) -> str or list:
                 string = string.replace(
                     char, japanese.omoji_to_komoji_dict[char])
         return string
-
-    elif(isinstance(string, list)):  # string is list
-        string_list = string
-        return_list = []
-        for string in string_list:
-            for char in string:
-                if(char in japanese.omoji_to_komoji_dict):
-                    string = string.replace(
-                        char, japanese.omoji_to_komoji_dict[char])
-            return_list.append(string)
-        return return_list
+    else:
+        raise ValueError('arg must be str')
