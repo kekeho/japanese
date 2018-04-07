@@ -29,9 +29,21 @@ komoji_hiragana_dict = {
 komoji_katakana_dict = {
     'ヵ': 'ヵ', 'ヶ': 'ヶ', #Support: the ヵ&ヶ is only available on Katakana
 }
+komoji_to_omoji_dict = {
+    'ぁ': 'あ', 'ぃ': 'い', 'ぅ': 'う', 'ぇ': 'え', 'ぉ': 'お',
+    'ァ': 'ア', 'ィ': 'イ', 'ゥ': 'ウ', 'ェ': 'エ', 'ォ': 'オ',
+    'っ': 'つ',
+    'ッ': 'ツ',
+    'ゃ': 'や', 'ゅ': 'ゆ', 'ょ': 'よ',
+    'ャ': 'ヤ', 'ュ': 'ユ', 'ョ': 'ヨ',
+    'ゎ': 'わ',
+    'ヮ': 'ワ',
+    'ヵ': 'カ', 'ヶ': 'ケ',
+}
 
 hira_to_katakana_dict = {**seion_dict, **dakuon_dict, **komoji_hiragana_dict}
 katakana_to_hira_dict = {**{v:k for k, v in seion_dict.items()}, 
                         **{v:k for k, v in dakuon_dict.items()},
                         **{v:k for k, v in komoji_hiragana_dict.items()},
                         **komoji_katakana_dict}
+komoji_dict = {**komoji_hiragana_dict, **komoji_katakana_dict}
