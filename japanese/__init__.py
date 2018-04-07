@@ -1,5 +1,12 @@
-from . import isthis
-from . import to
+from . import *
+
+__copyright__ = 'Copyright (C) 2018 Hiroki Takemura'
+__version__ = '0.1.0'
+__license__ = 'MIT'
+__author__ = 'Hiroki Takemura'
+__author_email__ = 'hirodora@me.com'
+__url__ = 'https://github.com/kekeho/japanese'
+__all__ = ['isthis', 'to']
 
 seion_dict = {
     'あ': 'ア', 'い': 'イ', 'う': 'ウ', 'え': 'エ', 'お': 'オ',
