@@ -1,4 +1,5 @@
 from . import isthis
+from . import to
 
 seion_dict = {
     'あ': 'ア', 'い': 'イ', 'う': 'ウ', 'え': 'エ', 'お': 'オ',
