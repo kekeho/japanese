@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='japanese',
-    version='0.1',
+    version='0.1.1',
     descrption='Python Japanese library for Humans',
     url='https://github.com/kekeho/japanese',
     author='Hiroki Takemura',

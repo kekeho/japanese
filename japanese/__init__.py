@@ -1,4 +1,5 @@
-from . import *
+from . import isthis
+from . import to
 
 __copyright__ = 'Copyright (C) 2018 Hiroki Takemura'
 __version__ = '0.1.0'
