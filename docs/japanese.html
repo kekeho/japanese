@@ -1,0 +1,199 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>japanese package &#8212; japanese  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to japanese’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="japanese-package">
+<h1>japanese package<a class="headerlink" href="#japanese-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-japanese.isthis">
+<span id="japanese-isthis-module"></span><h2>japanese.isthis module<a class="headerlink" href="#module-japanese.isthis" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="japanese.isthis.hiragana">
+<code class="descclassname">japanese.isthis.</code><code class="descname">hiragana</code><span class="sig-paren">(</span><em>string: str</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/japanese/isthis.html#hiragana"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#japanese.isthis.hiragana" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is this hiragana?
+Check all char in string is Hiragana.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>string(str): check string.</dd>
+<dt>Returns:</dt>
+<dd><dl class="first last docutils">
+<dt>bool: </dt>
+<dd>True: String is completely written by Hiragana.
+False: Hiragana is included in string.</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="japanese.isthis.katakana">
+<code class="descclassname">japanese.isthis.</code><code class="descname">katakana</code><span class="sig-paren">(</span><em>string: str</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/japanese/isthis.html#katakana"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#japanese.isthis.katakana" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is this katakana?
+Check all char in string is Katakana.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>string(str): check string.</dd>
+<dt>Returns:</dt>
+<dd><dl class="first last docutils">
+<dt>bool:</dt>
+<dd>True: String is completely written by Katakana.
+False: Katakana is included in string.</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="japanese.isthis.komoji">
+<code class="descclassname">japanese.isthis.</code><code class="descname">komoji</code><span class="sig-paren">(</span><em>string: str</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/japanese/isthis.html#komoji"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#japanese.isthis.komoji" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is this Komoji?
+Check all char in string is Komoji.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>string(str): check string.</dd>
+<dt>Returns:</dt>
+<dd><dl class="first last docutils">
+<dt>bool:</dt>
+<dd>True: String is completely written by Komoji.
+False: Komoji</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="japanese.isthis.omoji">
+<code class="descclassname">japanese.isthis.</code><code class="descname">omoji</code><span class="sig-paren">(</span><em>string: str</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/japanese/isthis.html#omoji"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#japanese.isthis.omoji" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is this Ōmoji?
+Check all char in string is Ōmoji.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>string(str): check string.</dd>
+<dt>Returns:</dt>
+<dd><dl class="first last docutils">
+<dt>bool:</dt>
+<dd>True: String is completely written by Ōmoji.
+False: Komoji (and more) is included in string.</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-japanese.to">
+<span id="japanese-to-module"></span><h2>japanese.to module<a class="headerlink" href="#module-japanese.to" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="japanese.to.lower">
+<code class="descclassname">japanese.to.</code><code class="descname">lower</code><span class="sig-paren">(</span><em>string: str</em><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="_modules/japanese/to.html#lower"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#japanese.to.lower" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert to Komoji every char.
+Args:</p>
+<blockquote>
+<div>string(str): Check string</div></blockquote>
+<dl class="docutils">
+<dt>Returns:</dt>
+<dd>Converted string(str)</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="japanese.to.upper">
+<code class="descclassname">japanese.to.</code><code class="descname">upper</code><span class="sig-paren">(</span><em>string: str</em><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="_modules/japanese/to.html#upper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#japanese.to.upper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert to Ōmoji every char.
+Args:</p>
+<blockquote>
+<div>string(str): Check string</div></blockquote>
+<dl class="docutils">
+<dt>Returns:</dt>
+<dd>Converted string(str)</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-japanese">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-japanese" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to japanese’s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Author.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/japanese.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
