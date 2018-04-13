@@ -12,9 +12,17 @@ gyaru = 'わたしギャルいちねんせい。こもぢとかまだわかん�
 #Convert Omoji to Komoji
 ja.to.lower(gyaru) # -> 'ゎたしギャルぃちねんせぃ。こもぢとかまだゎかんな。、、りすかしょ'
 
+hiragana = 'これは、ひらがなのみでこうせいされたすとりんぐ。'
+hiragana_katakana_kanji = 'これは, ひらがな以外も含まれたストリング.'
+katakana = 'コレハ、スベテカタカナノストリング。'
+
 #Check all char is Hiragana
-ja.isthis.hiragana(gyaru) # -> False
+ja.isthis.hiragana(hiragana) # -> True
+ja.isthis.hiragana(hiragana_katakana_kanji) # -> False
 
 #Check all char is Katakana
-ja.isthis.katakana(gyaru) # -> False
+ja.isthis.katakana(katakana) # -> True
 ```
+
+## Reference
+Reference is [here](http://kekeho.com/japanese/)
