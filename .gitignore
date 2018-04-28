@@ -2,3 +2,6 @@
 build/
 japanese.egg-info/
 dist/
+.python-japanese-buffer
+japanese-env
+main.py
