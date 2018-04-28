@@ -8,9 +8,9 @@ Only for Python3. Not support python2.x
 ## Use
 ```python
 import japanese as ja
-gyaru = 'わたしギャルいちねんせい。こもぢとかまだわかんない。、、りすかしよ'
+gyaru = 'わたしギャルいちねんせい。こもぢとかまだわかんない。、、りすかしよ'
 #Convert Omoji to Komoji
-ja.to.lower(gyaru) # -> 'ゎたしギャルぃちねんせぃ。こもぢとかまだゎかんな。、、りすかしょ'
+ja.to.lower(gyaru) # -> 'ゎたしギャルぃちねんせぃ。こもぢとかまだゎかんなぃ。、、りすかしょ'
 
 hiragana = 'これは、ひらがなのみでこうせいされたすとりんぐ。'
 hiragana_katakana_kanji = 'これは, ひらがな以外も含まれたストリング.'
