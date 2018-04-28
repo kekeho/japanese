@@ -13,11 +13,22 @@ def string(string: str):
         string: speak this string.
     """
     tts = gTTS(text=string, lang='ja')
-    tts.save(BUFFER_FILE_NAME) #buffer file(MP3)
+    tts.save(BUFFER_FILE_NAME)  # buffer file(MP3)
     pygame.mixer.init()
     pygame.mixer.music.load(BUFFER_FILE_NAME)
-    mp3_length = mp3(BUFFER_FILE_NAME).info.length #get buffer file(MP3)'s length (second)
-    pygame.mixer.music.play(1) #play only one time
-    time.sleep(mp3_length+0.25) #continue play
+    # get buffer file(MP3)'s length (second)
+    mp3_length = mp3(BUFFER_FILE_NAME).info.length
+    pygame.mixer.music.play(1)  # play only one time
+    time.sleep(mp3_length + 0.25)  # continue play
     pygame.mixer.music.stop()
-    os.remove(BUFFER_FILE_NAME) #delete buffer file(MP3)
+    os.remove(BUFFER_FILE_NAME)  # delete buffer file(MP3)
+
+
+def save(string: str, filename: str):
+    """Speak to file
+    Arg:
+        string: speak this string
+        filename: speak to this file
+    """
+    tts = gTTS(text=string, lang='ja')
+    tts.save(filename)
