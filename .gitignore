@@ -5,3 +5,4 @@ dist/
 .python-japanese-buffer
 japanese-env
 main.py
+docs-sphinx

@@ -8,7 +8,7 @@ __license__ = 'MIT'
 __author__ = 'Hiroki Takemura'
 __author_email__ = 'hirodora@me.com'
 __url__ = 'https://github.com/kekeho/japanese'
-__all__ = ['isthis', 'to']
+__all__ = ['isthis', 'to', 'speak']
 
 seion_dict = {
     'あ': 'ア', 'い': 'イ', 'う': 'ウ', 'え': 'エ', 'お': 'オ',

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # japanese documentation build configuration file, created by
-# sphinx-quickstart on Mon Apr  9 17:07:50 2018.
+# sphinx-quickstart on Sat Apr 28 19:24:08 2018.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.

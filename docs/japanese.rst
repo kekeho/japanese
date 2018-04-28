@@ -12,6 +12,14 @@ japanese\.isthis module
     :undoc-members:
     :show-inheritance:
 
+japanese\.speak module
+----------------------
+
+.. automodule:: japanese.speak
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 japanese\.to module
 -------------------
 
