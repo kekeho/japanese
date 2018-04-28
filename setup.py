@@ -1,8 +1,21 @@
 from setuptools import setup
 
+requires = [
+    "certifi==2018.4.16",
+    "chardet==3.0.4",
+    "gTTS==1.2.2",
+    "gTTS-token==1.1.1",
+    "idna==2.6",
+    "mutagen==1.40.0",
+    "pygame==1.9.3",
+    "requests==2.18.4",
+    "six==1.11.0",
+    "urllib3==1.22",
+]
+
 setup(
     name='japanese',
-    version='0.1.1',
+    version='0.2.0',
     descrption='Python Japanese library for Humans',
     url='https://github.com/kekeho/japanese',
     author='Hiroki Takemura',
@@ -13,5 +26,6 @@ setup(
     classifiers=[
         'Programming Language :: Python :: 3.6',
         'Natural Language :: Japanese'
-    ]
+    ],
+    install_requires=requires,
 )
