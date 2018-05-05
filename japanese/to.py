@@ -39,7 +39,7 @@ def lower(string: str) -> str:
         raise ValueError('arg must be str')
 
 
-def kana(string: str) -> str:
+def katakana(string: str) -> str:
     """Convert sentence(include Kanji) to Katakana string.
     Args:
         string(str): Input string which includes Kanji
@@ -52,7 +52,28 @@ def kana(string: str) -> str:
 
         kana_string = ''
         for word in word_list:
-            kana_string += str(word).split(',')[-2]
+            kana_string += word.reading
+
+        return kana_string
+    else:
+        raise ValueError('arg must be str')
+
+
+def phonetic(string: str) -> str:
+    """Convert Sentence to phonetic(Katakana)
+    Example: 東京→トーキョー
+    Arg:
+        string(str): Input string
+    Return:
+        Katakana(str)
+    """
+    if(isinstance(string, str)):
+        t = Tokenizer()
+        word_list = t.tokenize(string)
+
+        kana_string = ''
+        for word in word_list:
+            kana_string += word.phonetic
 
         return kana_string
     else:
