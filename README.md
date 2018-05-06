@@ -24,5 +24,14 @@ ja.isthis.hiragana(hiragana_katakana_kanji) # -> False
 ja.isthis.katakana(katakana) # -> True
 ```
 
+```python
+#Convert string to Hiragana
+hiragana = japanese.to.hiragana("東京の新宿のリンゴ農家に行ってiPhoneXを購入した")
+# -> とうきょうのしんじゅくのりんごのうかにいってiPhoneXをこうにゅうした
+
+#Convert string to phonetic katakana
+hatsuon = japanese.to.phonetic("東京の新宿のリンゴ農家に行ってiPhoneXを購入した")
+# -> トーキョーノシンジュクノリンゴノーカニイッテiPhoneXヲコーニューシタ
+```
 ## Reference
 Reference is [here](http://kekeho.com/japanese/)
