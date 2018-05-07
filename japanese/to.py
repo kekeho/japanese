@@ -48,7 +48,7 @@ def katakana(string: str) -> str:
     """
     if(isinstance(string, str)):
         t = Tokenizer()
-        word_list = t.tokenize(string)
+        word_list = t.tokenize(string, stream=True)
 
         kana_string = ''
         for word in word_list:
@@ -93,7 +93,7 @@ def phonetic(string: str) -> str:
     """
     if(isinstance(string, str)):
         t = Tokenizer()
-        word_list = t.tokenize(string)
+        word_list = t.tokenize(string, stream=True)
 
         kana_string = ''
         for word in word_list:
