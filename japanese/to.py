@@ -52,9 +52,33 @@ def katakana(string: str) -> str:
 
         kana_string = ''
         for word in word_list:
-            kana_string += word.reading
+            if(word.reading is '*'):
+                kana_string += word.surface
+            else:
+                kana_string += word.reading
 
         return kana_string
+    else:
+        raise ValueError('arg must be str')
+
+
+def hiragana(string: str) -> str:
+    """Convert sentence(include Kanji) to Hiragana string.
+    Args:
+        string(str): Input string which includes Kanji
+    Returns:
+        Converted Hiragana string
+    """
+    if(isinstance(string, str)):
+        katakana_string = katakana(string)
+        hiragana_string = ''
+        for word in katakana_string:
+            if(japanese.isthis.katakana(word) is False):
+                hiragana_string += word
+            else:
+                hiragana_string += japanese.katakana_to_hira_dict[word]
+
+        return hiragana_string
     else:
         raise ValueError('arg must be str')
 
@@ -73,7 +97,10 @@ def phonetic(string: str) -> str:
 
         kana_string = ''
         for word in word_list:
-            kana_string += word.phonetic
+            if(word.phonetic is '*'):
+                kana_string += word.surface
+            else:
+                kana_string += word.phonetic
 
         return kana_string
     else:
