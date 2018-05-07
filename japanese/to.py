@@ -2,6 +2,7 @@ import japanese
 from janome.tokenizer import Tokenizer
 pass_chars = ['。', '、', ' ', '\n', '\t', '\b', '\r', '\f']
 
+t = Tokenizer(mmap=True)
 
 def upper(string: str) -> str:
     """Convert to Ōmoji every char.
@@ -47,7 +48,7 @@ def katakana(string: str) -> str:
         Converted Katakana string
     """
     if(isinstance(string, str)):
-        t = Tokenizer()
+        global t
         word_list = t.tokenize(string, stream=True)
 
         kana_string = ''
@@ -92,7 +93,7 @@ def phonetic(string: str) -> str:
         Katakana(str)
     """
     if(isinstance(string, str)):
-        t = Tokenizer()
+        global t
         word_list = t.tokenize(string, stream=True)
 
         kana_string = ''
