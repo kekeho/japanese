@@ -3,6 +3,7 @@ chardet==3.0.4
 gTTS==1.2.2
 gTTS-token==1.1.1
 idna==2.6
+Janome==0.3.6
 mutagen==1.40.0
 pygame==1.9.3
 requests==2.18.4
