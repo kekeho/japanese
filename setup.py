@@ -11,7 +11,7 @@ requires = [
     "pygame==1.9.3",
     "requests==2.18.4",
     "six==1.11.0",
-    "urllib3==1.22"
+    "urllib3==1.24.2"
 ]
 
 setup(
